@@ -1,0 +1,377 @@
+/* Global Layout Set-up */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bolder;
+  color: #0f0f11;
+  background: #f4e7e2;
+}
+/* Link Styles */
+
+a {
+  text-decoration: none;
+  color: #999;
+}
+a:hover {
+  color: #ab8b94;
+}
+
+/* Section Styles */
+
+.main-nav {
+  width: 100%;
+  background: black;
+  min-height: 30px;
+  padding: 10px;
+  position: fixed;
+  text-align: right;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  font-weight: 800;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.nav .name {
+  display: block;
+  margin-right: auto;
+  color: white;
+}
+
+.nav li {
+  padding: 5px 10px 10px 10px;
+}
+.nav a {
+  transition: all 0.5s;
+}
+.nav a:hover {
+  color: white;
+}
+
+header {
+  text-align: center;
+  background: url("images/sharon-mccutcheon-62vi3TG5EDg-unsplash.jpg") no-repeat
+    top center;
+  background-size: cover;
+  overflow: hidden;
+  padding-top: 60px;
+}
+header {
+  line-height: 1.5;
+}
+
+header .profile-image {
+  margin-top: 50px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid white;
+  transition: all 0.5s;
+}
+header .profile-image:hover {
+  transform: scale(1.2);
+}
+.tag {
+  background-color: #f4e7e2;
+  color: black;
+  padding: 10px;
+  border-radius: 10px;
+  display: table;
+  margin: 10px auto;
+}
+
+.greeting {
+  background-color: #222;
+  opacity: 80%;
+  color: #f4e7e2;
+}
+.card {
+  margin: 30px;
+  padding: 20px 40px 40px;
+  max-width: 500px;
+  text-align: left;
+  background: #fff;
+  border-bottom: 4px solid #ccc;
+  border-right: 2px solid #ccc;
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+.card:hover {
+  border-color: #ab8b94;
+  transition: all 0.5s;
+}
+
+ul.skills {
+  padding: 0;
+  text-align: center;
+}
+
+.skills li {
+  border-radius: 6px;
+  display: inline-block;
+  background: #9897a9;
+  color: white;
+  padding: 5px 10px;
+  margin: 2px;
+}
+
+.skills li:nth-child(odd) {
+  background: #ab8b94;
+}
+
+footer {
+  width: 100%;
+  min-height: 30px;
+  padding: 20px 0;
+  margin: 0;
+}
+
+footer .copyright {
+  top: -8px;
+  font-size: 0.75em;
+}
+
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer ul li {
+  display: inline-block;
+}
+
+a.social {
+  display: inline-block;
+  text-indent: -9999px;
+  margin-left: 5px;
+  width: 30px;
+  height: 30px;
+  background-size: 30px 30px;
+  opacity: 0.4;
+  transition: all 0.5s;
+}
+a.twitter {
+  background-image: url(images/twitter.svg);
+}
+a.linkedin {
+  background-image: url(images/linkedin.svg);
+}
+a.github {
+  background-image: url(images/github.svg);
+}
+a.social:hover {
+  opacity: 1;
+}
+.clearfix {
+  clear: both;
+}
+
+/* Styles for larger screens */
+@media screen and (min-width: 720px) {
+  .flex {
+    display: -ms-flexbox; /* TWEENER - IE 10 */
+    display: flex;
+    max-width: 1200px;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    margin: 0 auto;
+  }
+
+  header {
+    min-height: 470px;
+  }
+
+  .nav {
+    max-width: 1200px;
+    padding: 0 30px;
+  }
+
+  main {
+    padding-top: 20px;
+  }
+
+  main p {
+    line-height: 1.6em;
+  }
+
+  footer {
+    font-size: 0.75em;
+    max-width: 1200px;
+    margin: 100px auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+.mainIntro {
+  padding: 20px 20px;
+}
+
+.dots {
+  border-bottom: dotted 3px #9897a9;
+  width: 5%;
+  margin: auto;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  display: block;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+span img {
+  width: 25%;
+  margin: 20px 40px;
+  padding-top: 40px;
+  border-bottom: 4px solid white;
+  border-bottom: 4px solid white;
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+
+span img:hover {
+  border-color: black;
+  transition: all 0.5s;
+}
+
+#altHead {
+  background: url("images/shortenedImage.png") no-repeat top;
+  width: 100%;
+  height: 200px;
+  margin-top: 0;
+}
+
+.experience {
+  color: black;
+  border-radius: 10px;
+  padding-top: 100px;
+  background: none;
+  text-align: left;
+}
+
+#expState {
+  padding-top: 50px;
+  width: 75%;
+  margin: auto;
+  line-height: 125%;
+}
+
+.expCard {
+  width: 60%;
+  margin: 10px;
+  margin-top: 30px;
+  padding: 20px 40px 40px;
+  text-align: left;
+  background: #fff;
+  border-bottom: 4px solid #ccc;
+  border-right: 2px solid #ccc;
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+
+.expCard2 {
+  color: white;
+  width: 20%;
+  margin: 10px;
+  margin-top: 30px;
+  padding: 20px 40px 40px;
+  max-width: 500px;
+  text-align: left;
+  font-weight: bold;
+  background: #9897a9;
+  border-bottom: 4px solid #ccc;
+  border-right: 2px solid #ccc;
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+
+.expBackground {
+  width: 80%;
+  background: #ab8b94;
+  margin-top: 30px;
+  border-bottom: 2px solid #ccc;
+  border-right: 2px solid #ccc;
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+
+#foot {
+  background-color: #ffffff;
+  color: #565561;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.expImage img {
+  width: 400px;
+  height: 300px;
+  padding: 20px;
+}
+
+.formBox {
+  width: 50%;
+  margin: auto;
+  padding: 60px;
+  background-color: #ab8b94;
+  border-bottom: 4px solid #ccc;
+  border-right: 2px solid #ccc;
+  border-radius: 10px;
+  transition: all 0.5s;
+  color: white;
+}
+
+.entries {
+  margin: 2em;
+  text-align: left;
+}
+
+#button button {
+  background-color: white;
+  color: #565561;
+  letter-spacing: 0.3em;
+  border: 5px solid white;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+#button button:hover {
+  color: white;
+  background-color: #565561;
+  border: 5px solid #565561;
+  transition: all 0.5s;
+}
+
+#name {
+  padding-right: 30%;
+  border: 5px solid white;
+  border-radius: 10px;
+}
+
+#email {
+  padding-right: 30%;
+  border: 5px solid white;
+  border-radius: 10px;
+}
+
+#question {
+  padding-right: 30%;
+  padding-bottom: 30%;
+  border: 5px solid white;
+  border-radius: 10px;
+}
+
+#expState h2 {
+  line-height: 1.5em;
+}
