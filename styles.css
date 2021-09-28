@@ -177,73 +177,6 @@ a.social:hover {
   clear: both;
 }
 
-/* Styles for larger screens */
-@media screen and (min-width: 720px) {
-  .flex {
-    display: -ms-flexbox; /* TWEENER - IE 10 */
-    display: flex;
-    max-width: 1200px;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
-    margin: 0 auto;
-  }
-
-  header {
-    min-height: 470px;
-  }
-
-  .nav {
-    max-width: 1200px;
-    padding: 0 30px;
-  }
-
-  main {
-    padding-top: 20px;
-  }
-
-  main p {
-    line-height: 1.6em;
-  }
-
-  footer {
-    font-size: 0.75em;
-    max-width: 1200px;
-    margin: 100px auto;
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-}
-
-.mainIntro {
-  padding: 20px 20px;
-}
-
-.dots {
-  border-bottom: dotted 3px #9897a9;
-  width: 5%;
-  margin: auto;
-  margin-top: 2em;
-  margin-bottom: 2em;
-  display: block;
-  padding-top: 1em;
-  padding-bottom: 1em;
-}
-
-span img {
-  width: 25%;
-  margin: 20px 40px;
-  padding-top: 40px;
-  border-bottom: 4px solid white;
-  border-bottom: 4px solid white;
-  border-radius: 10px;
-  transition: all 0.5s;
-}
-
-span img:hover {
-  border-color: black;
-  transition: all 0.5s;
-}
-
 #altHead {
   background: url("images/shortenedImage.png") no-repeat top;
   width: 100%;
@@ -308,7 +241,7 @@ span img:hover {
 #foot {
   background-color: #ffffff;
   color: #565561;
-  width: 100%;
+  width: calc(100vh-109px);
   margin: 0 auto;
   margin-top: 100px;
 }
@@ -320,7 +253,8 @@ span img:hover {
 }
 
 .formBox {
-  width: 50%;
+  width: 80%;
+  max-width: 500px;
   margin: auto;
   padding: 60px;
   background-color: #ab8b94;
@@ -332,7 +266,8 @@ span img:hover {
 }
 
 .entries {
-  margin: 2em;
+  margin: 2em 2em 2em 0;
+  padding: 1em;
   text-align: left;
 }
 
@@ -374,4 +309,75 @@ span img:hover {
 
 #expState h2 {
   line-height: 1.5em;
+}
+
+/* Styles for larger screens */
+@media screen and (min-width: 720px) {
+  .flex {
+    display: -ms-flexbox; /* TWEENER - IE 10 */
+    display: flex;
+    max-width: 1200px;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    margin: 0 auto;
+  }
+
+  .formbox {
+    width: 40%;
+    max-width: 500px;
+  }
+
+  header {
+    min-height: 470px;
+  }
+
+  .nav {
+    max-width: 1200px;
+    padding: 0 30px;
+  }
+
+  main {
+    padding-top: 20px;
+  }
+
+  main p {
+    line-height: 1.6em;
+  }
+
+  footer {
+    font-size: 0.75em;
+    margin: 100px auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+.mainIntro {
+  padding: 20px 20px;
+}
+
+.dots {
+  border-bottom: dotted 3px #9897a9;
+  width: 5%;
+  margin: auto;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  display: block;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+span img {
+  width: 25%;
+  margin: 20px 40px;
+  padding-top: 40px;
+  border-bottom: 4px solid white;
+  border-bottom: 4px solid white;
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+
+span img:hover {
+  border-color: black;
+  transition: all 0.5s;
 }
