@@ -9,6 +9,7 @@ body {
   text-align: center;
   font-family: "Montserrat", sans-serif;
   font-weight: bolder;
+  font-size: 16px;
   color: #0f0f11;
   background: #f4e7e2;
 }
@@ -16,10 +17,19 @@ body {
 
 a {
   text-decoration: none;
-  color: #999;
+  color: rgb(230, 225, 225);
 }
 a:hover {
   color: #ab8b94;
+  padding-right: 20px;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 30px;
 }
 
 /* Section Styles */
@@ -249,7 +259,9 @@ a.social:hover {
 .expImage img {
   width: 400px;
   height: 300px;
-  padding: 20px;
+  padding-left: 20px;
+  padding-bottom: 0px;
+  padding-top: 30px;
 }
 
 .formBox {
@@ -268,6 +280,7 @@ a.social:hover {
 .entries {
   margin: 2em 2em 2em 0;
   padding: 1em;
+
   text-align: left;
 }
 
@@ -286,6 +299,10 @@ a.social:hover {
   background-color: #565561;
   border: 5px solid #565561;
   transition: all 0.5s;
+}
+
+label {
+  padding-bottom: 10px;
 }
 
 #name {
